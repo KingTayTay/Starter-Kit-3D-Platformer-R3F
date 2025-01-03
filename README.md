@@ -6,6 +6,10 @@ This repository is a modified version of the [3D Platformer Starter Kit](https:/
 
 <p align="center"><img src="screenshots/screenshot.png"/></p>
 
+## Play Now
+
+Try the game directly in your browser: [Play Demo](https://kingtaytay.github.io/Starter-Kit-3D-Platformer-R3F/)
+
 ## Goal
 
 The primary aim of this project is to provide an example React Three Fiber project that other developers can use to learn from and build their own 3D platformer games.
