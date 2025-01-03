@@ -1,10 +1,10 @@
 import { PerspectiveCamera, useKeyboardControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { RapierRigidBody, vec3 } from "@react-three/rapier";
 import { damp3, dampE } from "maath/easing";
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
-import { Euler, Vector3 } from "three";
+import { Euler, Vector3, Group } from "three";
 import { Controls } from "../App";
-import { RapierRigidBody, vec3 } from "@react-three/rapier";
 
 const input = new Vector3(0, 0, 0);
 const viewRotation = new Vector3(0, 0, 0); // in degrees
@@ -16,9 +16,9 @@ type Props = JSX.IntrinsicElements["group"] & {
   targetRef: React.RefObject<RapierRigidBody>;
 };
 
-export const View = forwardRef<THREE.Group, Props>((props, forwardedRef) => {
-  const groupRef = useRef<THREE.Group>(null!);
-  const [_sub, get] = useKeyboardControls<Controls>();
+export const View = forwardRef<Group, Props>((props, forwardedRef) => {
+  const groupRef = useRef<Group>(null!);
+  const [, get] = useKeyboardControls<Controls>();
 
   useImperativeHandle(forwardedRef, () => groupRef.current);
 
