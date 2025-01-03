@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+<p align="center"><img src="icon.png"/></p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Three Fiber 3D Platformer Starter Kit
 
-Currently, two official plugins are available:
+This repository is a modified version of the [3D Platformer Starter Kit](https://github.com/KenneyNL/Starter-Kit-3D-Platformer) originally created by Kenney, adapted to showcase the usage of [React Three Fiber](https://github.com/pmndrs/react-three-fiber) for developing 3D web games.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshot
 
-## Expanding the ESLint configuration
+<p align="center"><img src="screenshots/screenshot.png"/></p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Goal
 
-- Configure the top-level `parserOptions` property like this:
+The primary aim of this project is to provide an example React Three Fiber project that other developers can use to learn from and build their own 3D platformer games.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To get started with this project, follow these steps:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and navigate to `http://localhost:5173`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Credits
+
+- Original 3D Platformer Starter Kit by Kenney - [KenneyNL/Starter-Kit-3D-Platformer](https://github.com/KenneyNL/Starter-Kit-3D-Platformer)
+- React Three Fiber by pmndrs - [pmndrs/react-three-fiber](https://github.com/pmndrs/react-three-fiber)
+
+> ### License
+>
+> MIT License
+>
+> Copyright (c) 2023 Kenney
+>
+> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+>
+> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+>
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+>
+> Assets included in this package (2D sprites, 3D models and sound effects) are [CC0 licensed](https://creativecommons.org/publicdomain/zero/1.0/)
