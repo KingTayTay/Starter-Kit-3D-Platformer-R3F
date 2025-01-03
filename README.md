@@ -1,5 +1,3 @@
-<p align="center"><img src="icon.png"/></p>
-
 # React Three Fiber 3D Platformer Starter Kit
 
 This repository is a modified version of the [3D Platformer Starter Kit](https://github.com/KenneyNL/Starter-Kit-3D-Platformer) originally created by Kenney, adapted to showcase the usage of [React Three Fiber](https://github.com/pmndrs/react-three-fiber) for developing 3D web games.
