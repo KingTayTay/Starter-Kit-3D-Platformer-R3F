@@ -12,7 +12,7 @@ type GLTFResult = GLTF & {
   };
 };
 
-const modelUrl = "/assets/models/platform.glb";
+const modelUrl = "/Starter-Kit-3D-Platformer-R3F/assets/models/platform.glb";
 
 useGLTF.preload(modelUrl);
 

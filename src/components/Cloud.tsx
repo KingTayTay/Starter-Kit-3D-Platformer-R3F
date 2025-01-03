@@ -11,11 +11,11 @@ type GLTFResult = GLTF & {
   };
 };
 
-useGLTF.preload("/assets/models/cloud.glb");
+useGLTF.preload("/Starter-Kit-3D-Platformer-R3F/assets/models/cloud.glb");
 
 export function Cloud(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
-    "/assets/models/cloud.glb"
+    "/Starter-Kit-3D-Platformer-R3F/assets/models/cloud.glb"
   ) as unknown as GLTFResult;
 
   return (

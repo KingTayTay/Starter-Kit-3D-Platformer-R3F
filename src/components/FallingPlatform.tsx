@@ -11,7 +11,9 @@ import * as THREE from "three";
 import { GLTF } from "three-stdlib";
 import { useAudio } from "../hooks/UseAudio";
 
-useGLTF.preload("/assets/models/platform-falling.glb");
+useGLTF.preload(
+  "/Starter-Kit-3D-Platformer-R3F/assets/models/platform-falling.glb"
+);
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -39,10 +41,12 @@ export function FallingPlatform(props: Props) {
   const ref = useRef<RapierRigidBody>(null);
   const groupRef = useRef<THREE.Group>(null);
   const { nodes, materials } = useGLTF(
-    "/assets/models/platform-falling.glb"
+    "/Starter-Kit-3D-Platformer-R3F/assets/models/platform-falling.glb"
   ) as unknown as GLTFResult;
   const [falling, setFalling] = useState(false);
-  const [fallSound] = useAudio("/assets/sounds/fall.ogg");
+  const [fallSound] = useAudio(
+    "/Starter-Kit-3D-Platformer-R3F/assets/sounds/fall.ogg"
+  );
 
   useEffect(() => {
     if (!ref.current) return;

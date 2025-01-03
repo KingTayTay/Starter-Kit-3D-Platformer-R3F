@@ -4,7 +4,8 @@ import { GLTF } from "three-stdlib";
 import { Grass } from "./Grass";
 import { RigidBody, interactionGroups } from "@react-three/rapier";
 
-const platformGrassModelUrl = "/assets/models/platform-grass-large-round.glb";
+const platformGrassModelUrl =
+  "/Starter-Kit-3D-Platformer-R3F/assets/models/platform-grass-large-round.glb";
 
 useGLTF.preload(platformGrassModelUrl);
 

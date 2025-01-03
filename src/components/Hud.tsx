@@ -9,7 +9,7 @@ import { useState } from "react";
 import { useSnapshot } from "valtio";
 import { store } from "../store";
 
-const url = "/assets/sprites/coin.png";
+const url = "/Starter-Kit-3D-Platformer-R3F/assets/sprites/coin.png";
 
 export const Hud = () => {
   const coinTexture = useTexture(url);

@@ -14,7 +14,7 @@ type GLTFResult = GLTF & {
   };
 };
 
-useGLTF.preload("/assets/models/coin.glb");
+useGLTF.preload("/Starter-Kit-3D-Platformer-R3F/assets/models/coin.glb");
 
 type CoinProps = JSX.IntrinsicElements["group"] & {
   coinId: string;
@@ -23,9 +23,11 @@ type CoinProps = JSX.IntrinsicElements["group"] & {
 
 export function Coin(props: CoinProps) {
   const { nodes, materials } = useGLTF(
-    "/assets/models/coin.glb"
+    "/Starter-Kit-3D-Platformer-R3F/assets/models/coin.glb"
   ) as unknown as GLTFResult;
-  const [coinSound] = useAudio("/assets/sounds/coin.ogg");
+  const [coinSound] = useAudio(
+    "/Starter-Kit-3D-Platformer-R3F/assets/sounds/coin.ogg"
+  );
 
   const onCollect = () => {
     props.onCollect(props.coinId);

@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { GLTF } from "three-stdlib";
 
-const grassModelUrl = "/assets/models/grass.glb";
+const grassModelUrl = "/Starter-Kit-3D-Platformer-R3F/assets/models/grass.glb";
 
 type GLTFResult = GLTF & {
   nodes: {

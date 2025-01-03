@@ -11,11 +11,11 @@ type GLTFResult = GLTF & {
   };
 };
 
-useGLTF.preload("/assets/models/flag.glb");
+useGLTF.preload("/Starter-Kit-3D-Platformer-R3F/assets/models/flag.glb");
 
 export function Flag(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
-    "/assets/models/flag.glb"
+    "/Starter-Kit-3D-Platformer-R3F/assets/models/flag.glb"
   ) as unknown as GLTFResult;
 
   return (

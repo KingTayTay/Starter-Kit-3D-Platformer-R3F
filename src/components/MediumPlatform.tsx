@@ -12,7 +12,9 @@ type GLTFResult = GLTF & {
   };
 };
 
-useGLTF.preload("/assets/models/platform-medium.glb");
+useGLTF.preload(
+  "/Starter-Kit-3D-Platformer-R3F/assets/models/platform-medium.glb"
+);
 
 const COLLISION_GROUP = 1;
 const PLAYER_COLLISION_GROUP = 0;
@@ -23,7 +25,7 @@ const collisionGroup = interactionGroups(
 
 export function MediumPlatform(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
-    "/assets/models/platform-medium.glb"
+    "/Starter-Kit-3D-Platformer-R3F/assets/models/platform-medium.glb"
   ) as unknown as GLTFResult;
 
   return (

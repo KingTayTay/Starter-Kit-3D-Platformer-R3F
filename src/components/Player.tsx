@@ -39,7 +39,7 @@ type GLTFResult = GLTF & {
 
 type ActionName = "static" | "idle" | "walk" | "jump";
 
-const modelUrl = "/assets/models/character.glb";
+const modelUrl = "/Starter-Kit-3D-Platformer-R3F/assets/models/character.glb";
 
 useGLTF.preload(modelUrl);
 
@@ -81,9 +81,15 @@ export const Player = forwardRef<RapierRigidBody, Props>(
     const { actions } = useAnimations(animations, ref);
     const { world } = useRapier();
     const [animationName, setAnimationName] = useState<ActionName>("idle");
-    const [walkingSound] = useAudio("/assets/sounds/walking.ogg");
-    const [jumpSound] = useAudio("/assets/sounds/jump.ogg");
-    const [landSound] = useAudio("/assets/sounds/land.ogg");
+    const [walkingSound] = useAudio(
+      "/Starter-Kit-3D-Platformer-R3F/assets/sounds/walking.ogg"
+    );
+    const [jumpSound] = useAudio(
+      "/Starter-Kit-3D-Platformer-R3F/assets/sounds/jump.ogg"
+    );
+    const [landSound] = useAudio(
+      "/Starter-Kit-3D-Platformer-R3F/assets/sounds/land.ogg"
+    );
 
     useEffect(() => {
       if (walkingSound) {

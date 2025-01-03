@@ -2,7 +2,9 @@ import { useTexture } from "@react-three/drei";
 import { SpriteProps } from "@react-three/fiber";
 
 export const Star = (props: SpriteProps) => {
-  const starTexture = useTexture("/assets/sprites/star.png");
+  const starTexture = useTexture(
+    "/Starter-Kit-3D-Platformer-R3F/assets/sprites/star.png"
+  );
 
   return (
     <sprite {...props} renderOrder={1}>

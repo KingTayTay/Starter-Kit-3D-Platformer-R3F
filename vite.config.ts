@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   base: "/Starter-Kit-3D-Platformer-R3F/",
   plugins: [react()],
+  assetsInclude: ["**/*.glb", "**/*.gltf"],
 });
